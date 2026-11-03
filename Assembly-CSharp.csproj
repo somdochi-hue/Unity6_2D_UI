@@ -52,6 +52,7 @@
     <Compile Include="Assets\Scrips\GenericWindow.cs" />
     <Compile Include="Assets\Scrips\StartWindow.cs" />
     <Compile Include="Assets\Scrips\KeyboardWindow.cs" />
+    <Compile Include="Assets\Scrips\DifficultyWindow.cs" />
     <Compile Include="Assets\Scrips\Windows.cs" />
     <Compile Include="Assets\Scrips\GameOverWindow.cs" />
     <Compile Include="Assets\Scrips\WindowManager.cs" />
