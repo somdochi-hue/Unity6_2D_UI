@@ -1,4 +1,6 @@
 public enum Windows
 {
-    start,
+    Start,
+    GameOver,
+    Keyboard,
 }
