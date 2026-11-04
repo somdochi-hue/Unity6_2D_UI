@@ -58,7 +58,7 @@ public class GameOverWindow : GenericWindow
             elapsed += Time.deltaTime;
             float t = elapsed / 2f;
             int value = Mathf.RoundToInt(Mathf.Lerp(0, totalScore, t));
-            textTotalScore.text = $"{totalScore:D9}";
+            textTotalScore.text = $"{value:D9}";
             yield return null;
         }
         textTotalScore.text = $"{totalScore:D9}";
