@@ -52,10 +52,14 @@
     <Compile Include="Assets\Scrips\FileStreamExample.cs" />
     <Compile Include="Assets\Scrips\GenericWindow.cs" />
     <Compile Include="Assets\Scrips\StartWindow.cs" />
+    <Compile Include="Assets\Scrips\StringTable.cs" />
     <Compile Include="Assets\Scrips\Practice1.cs" />
     <Compile Include="Assets\Scrips\KeyboardWindow.cs" />
     <Compile Include="Assets\Scrips\DifficultyWindow.cs" />
+    <Compile Include="Assets\Scrips\DataTable.cs" />
     <Compile Include="Assets\Scrips\Windows.cs" />
+    <Compile Include="Assets\Scrips\Defines.cs" />
+    <Compile Include="Assets\Scrips\CSVTest1.cs" />
     <Compile Include="Assets\Scrips\Practice3.cs" />
     <Compile Include="Assets\Scrips\GameOverWindow.cs" />
     <Compile Include="Assets\Scrips\WindowManager.cs" />
@@ -70,6 +74,7 @@
     <None Include="Assets\_ThirdParty\KenneyUIPack\Spritesheet\greenSheet.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Packages\CsvHelper.33.1.0\lib\netstandard2.1\CsvHelper.xml" />
     <None Include="Assets\_ThirdParty\KenneyUIPack\Spritesheet\blueSheet.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
@@ -83,6 +88,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Packages\CsvHelper.33.1.0\lib\netstandard2.1\CsvHelper.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\_ThirdParty\KenneyUIPack\Spritesheet\greySheet.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -640,6 +646,10 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CsvHelper">
+      <HintPath>Assets\Packages\CsvHelper.33.1.0\lib\netstandard2.1\CsvHelper.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
