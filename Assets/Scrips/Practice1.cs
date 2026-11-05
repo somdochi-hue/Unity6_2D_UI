@@ -10,8 +10,6 @@ public class Practice1 : MonoBehaviour
     private string path2;
     private string path3;
 
-    private Dictionary<string, string> saveData  = new Dictionary<string, string>();
-
     private void Start()
     {
         folder = Path.Combine(Application.persistentDataPath, "SaveData");
