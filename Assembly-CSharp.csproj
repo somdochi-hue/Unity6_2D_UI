@@ -51,20 +51,31 @@
   <ItemGroup>
     <Compile Include="Assets\Scrips\FileStreamExample.cs" />
     <Compile Include="Assets\Scrips\GenericWindow.cs" />
+    <Compile Include="Assets\Scrips\ItemData.cs" />
+    <Compile Include="Assets\Scrips\CSVTest2.cs" />
     <Compile Include="Assets\Scrips\StartWindow.cs" />
+    <Compile Include="Assets\Scrips\CharacterData.cs" />
     <Compile Include="Assets\Scrips\StringTable.cs" />
     <Compile Include="Assets\Scrips\Practice1.cs" />
     <Compile Include="Assets\Scrips\KeyboardWindow.cs" />
     <Compile Include="Assets\Scrips\DifficultyWindow.cs" />
     <Compile Include="Assets\Scrips\DataTable.cs" />
+    <Compile Include="Assets\Scrips\LocalizationText.cs" />
     <Compile Include="Assets\Scrips\Windows.cs" />
     <Compile Include="Assets\Scrips\Defines.cs" />
     <Compile Include="Assets\Scrips\CSVTest1.cs" />
     <Compile Include="Assets\Scrips\Practice3.cs" />
+    <Compile Include="Assets\Scrips\UiCharacterInfo.cs" />
     <Compile Include="Assets\Scrips\GameOverWindow.cs" />
     <Compile Include="Assets\Scrips\WindowManager.cs" />
     <Compile Include="Assets\Scrips\FilePathExample.cs" />
+    <Compile Include="Assets\Scrips\UIItemButton.cs" />
+    <Compile Include="Assets\Scrips\UiCharacterButton.cs" />
+    <Compile Include="Assets\Scrips\DataTableManager.cs" />
+    <Compile Include="Assets\Scrips\UiItemInfo.cs" />
     <Compile Include="Assets\Scrips\Practice2.cs" />
+    <Compile Include="Assets\Scrips\CharacterTable.cs" />
+    <Compile Include="Assets\Scrips\ItemTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -644,12 +655,12 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@4edfcc09512f\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="CsvHelper">
       <HintPath>Assets\Packages\CsvHelper.33.1.0\lib\netstandard2.1\CsvHelper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">

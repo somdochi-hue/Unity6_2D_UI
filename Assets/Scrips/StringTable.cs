@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 
 public class StringTable : DataTable
@@ -19,6 +18,7 @@ public class StringTable : DataTable
         string path = string.Format(FormatPath, filename);
         TextAsset textAsset = Resources.Load<TextAsset>(path);
         List<Data> list = LoadCSV<Data>(textAsset.text);
+        
 
         foreach (var item in list)
         {
@@ -29,6 +29,18 @@ public class StringTable : DataTable
             else
             {
                 Debug.LogError($"키 중복: {item.ID}");
+            }
+        }
+
+        foreach (var character in list)
+        {
+            if (!dictionary.ContainsKey(character.ID))
+            {
+                dictionary.Add(character.ID, character.STRING);
+            }
+            else
+            {
+                Debug.LogError($"키 중복: {character.ID}");
             }
         }
     }

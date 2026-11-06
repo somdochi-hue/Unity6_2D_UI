@@ -5,7 +5,7 @@ public enum Languages
     Japanese,
 }
 
-public static class DataTables
+public static class DataTableIds
 {
     public static readonly string[] StringTableIDs =
     {
@@ -13,10 +13,30 @@ public static class DataTables
         "StringTableEn",
         "StringTableJp",
     };
-    public static string String => StringTableIDs[(int)Variables.languages];
+    public static string String => StringTableIDs[(int)Variables.Language];
+    public static readonly string Item = "ItemTable";
+    public static readonly string Character = "CharacterTable";
 }
 
 public static class Variables
 {
-    public static Languages languages;
+    public static event System.Action OnLanguageChanged;
+    private static Languages language = Languages.Japanese;
+
+    public static Languages Language
+    {
+        get => language;
+        set
+        {
+            if(language == value)
+            {
+                return;
+            }
+
+            language = value;
+            DataTableManager.ChangedLanguage(language);
+            OnLanguageChanged?.Invoke();
+        }
+
+    }
 }
