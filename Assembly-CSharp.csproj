@@ -49,37 +49,40 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.26f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scrips\JsonConverters.cs" />
     <Compile Include="Assets\Scrips\FileStreamExample.cs" />
+    <Compile Include="Assets\Scrips\CSV\CSVTest2.cs" />
     <Compile Include="Assets\Scrips\GenericWindow.cs" />
-    <Compile Include="Assets\Scrips\ItemData.cs" />
-    <Compile Include="Assets\Scrips\CSVTest2.cs" />
     <Compile Include="Assets\Scrips\StartWindow.cs" />
-    <Compile Include="Assets\Scrips\CharacterData.cs" />
     <Compile Include="Assets\Scrips\StringTable.cs" />
     <Compile Include="Assets\Scrips\Practice1.cs" />
     <Compile Include="Assets\Scrips\KeyboardWindow.cs" />
-    <Compile Include="Assets\Scrips\JsonTest1.cs" />
+    <Compile Include="Assets\Scrips\CSV\UiCharacterButton.cs" />
+    <Compile Include="Assets\Scrips\CSV\CSVTest1.cs" />
     <Compile Include="Assets\Scrips\DifficultyWindow.cs" />
-    <Compile Include="Assets\Scrips\JsonTest2.cs" />
+    <Compile Include="Assets\Scrips\Json\SaveData.cs" />
     <Compile Include="Assets\Scrips\DataTable.cs" />
     <Compile Include="Assets\Scrips\LocalizationText.cs" />
     <Compile Include="Assets\Scrips\Windows.cs" />
+    <Compile Include="Assets\Scrips\CSV\ItemData.cs" />
+    <Compile Include="Assets\Scrips\CSV\CharacterTable.cs" />
+    <Compile Include="Assets\Scrips\Json\JsonUtilityTest.cs" />
+    <Compile Include="Assets\Scrips\Json\SaveLoadManager.cs" />
     <Compile Include="Assets\Scrips\Defines.cs" />
-    <Compile Include="Assets\Scrips\CSVTest1.cs" />
     <Compile Include="Assets\Scrips\Practice3.cs" />
-    <Compile Include="Assets\Scrips\UiCharacterInfo.cs" />
     <Compile Include="Assets\Scrips\GameOverWindow.cs" />
     <Compile Include="Assets\Scrips\WindowManager.cs" />
-    <Compile Include="Assets\Scrips\JsonUtilityTest.cs" />
+    <Compile Include="Assets\Scrips\Json\SaveLoadTest1.cs" />
+    <Compile Include="Assets\Scrips\CSV\ItemTable.cs" />
+    <Compile Include="Assets\Scrips\Json\JsonTest1.cs" />
+    <Compile Include="Assets\Scrips\CSV\UiCharacterInfo.cs" />
     <Compile Include="Assets\Scrips\FilePathExample.cs" />
-    <Compile Include="Assets\Scrips\UIItemButton.cs" />
-    <Compile Include="Assets\Scrips\UiCharacterButton.cs" />
+    <Compile Include="Assets\Scrips\Json\JsonConverters.cs" />
     <Compile Include="Assets\Scrips\DataTableManager.cs" />
-    <Compile Include="Assets\Scrips\UiItemInfo.cs" />
+    <Compile Include="Assets\Scrips\CSV\UIItemButton.cs" />
     <Compile Include="Assets\Scrips\Practice2.cs" />
-    <Compile Include="Assets\Scrips\CharacterTable.cs" />
-    <Compile Include="Assets\Scrips\ItemTable.cs" />
+    <Compile Include="Assets\Scrips\CSV\CharacterData.cs" />
+    <Compile Include="Assets\Scrips\Json\JsonTest2.cs" />
+    <Compile Include="Assets\Scrips\CSV\UiItemInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -663,12 +666,12 @@
       <HintPath>Assets\Packages\CsvHelper.33.1.0\lib\netstandard2.1\CsvHelper.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
