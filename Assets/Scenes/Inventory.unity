@@ -917,7 +917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4185061290510129180, guid: bac302a6045668c468816a6677ad98fe, type: 3}
       propertyPath: m_text
-      value: "\uD0A4 \uC5C6\uC74C"
+      value: "\uC544\uC774\uD15C \uC0DD\uC131"
       objectReference: {fileID: 0}
     - target: {fileID: 4185061290510129180, guid: bac302a6045668c468816a6677ad98fe, type: 3}
       propertyPath: m_fontAsset
