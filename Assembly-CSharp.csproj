@@ -52,7 +52,9 @@
     <Compile Include="Assets\Scrips\FileStreamExample.cs" />
     <Compile Include="Assets\Scrips\CSV\CSVTest2.cs" />
     <Compile Include="Assets\Scrips\GenericWindow.cs" />
+    <Compile Include="Assets\Scrips\Inventory\UiItemSlotList.cs" />
     <Compile Include="Assets\Scrips\StartWindow.cs" />
+    <Compile Include="Assets\Scrips\Inventory\UiItemiInfo2.cs" />
     <Compile Include="Assets\Scrips\StringTable.cs" />
     <Compile Include="Assets\Scrips\Practice1.cs" />
     <Compile Include="Assets\Scrips\KeyboardWindow.cs" />
@@ -60,8 +62,10 @@
     <Compile Include="Assets\Scrips\CSV\CSVTest1.cs" />
     <Compile Include="Assets\Scrips\DifficultyWindow.cs" />
     <Compile Include="Assets\Scrips\Json\SaveData.cs" />
+    <Compile Include="Assets\Scrips\Inventory\UiInventory.cs" />
     <Compile Include="Assets\Scrips\DataTable.cs" />
     <Compile Include="Assets\Scrips\LocalizationText.cs" />
+    <Compile Include="Assets\Scrips\SaveItemData.cs" />
     <Compile Include="Assets\Scrips\Windows.cs" />
     <Compile Include="Assets\Scrips\CSV\ItemData.cs" />
     <Compile Include="Assets\Scrips\CSV\CharacterTable.cs" />
@@ -81,6 +85,7 @@
     <Compile Include="Assets\Scrips\CSV\UIItemButton.cs" />
     <Compile Include="Assets\Scrips\Practice2.cs" />
     <Compile Include="Assets\Scrips\CSV\CharacterData.cs" />
+    <Compile Include="Assets\Scrips\Inventory\UiItemSlot.cs" />
     <Compile Include="Assets\Scrips\Json\JsonTest2.cs" />
     <Compile Include="Assets\Scrips\CSV\UiItemInfo.cs" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 using UnityEngine;
 using Newtonsoft.Json;
-using SaveDataVC = SaveDataV4;
+using SaveDataVC = SaveDataV5;
 using System.IO;
 using CsvHelper.Configuration.Attributes;
 
@@ -21,7 +21,7 @@ public static class SaveLoadManager
         TypeNameHandling = TypeNameHandling.All,
     };
 
-    public static int SaveDataVersion {get;} = 4;
+    public static int SaveDataVersion {get;} = 5;
     public static SaveDataVC Data {get; set;} = new SaveDataVC();
     public static bool Save (int slot = 0)
     {

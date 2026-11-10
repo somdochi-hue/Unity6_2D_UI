@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public enum ItemTypes
@@ -9,6 +10,7 @@ public enum ItemTypes
 
 public class ItemData
 {
+    
     public string Id {get; set;}
     public ItemTypes Type {get; set;}
     public string Name {get; set;}
@@ -18,6 +20,7 @@ public class ItemData
     public string Icon {get; set;}
 
     public string StringName => DataTableManager.StringTable.Get(Name);
+    public string StringType => DataTableManager.StringTable.Get(Type.ToString().ToUpper());
     public string StringDesc => DataTableManager.StringTable.Get(Desc);
     public Sprite SpriteIcon => Resources.Load<Sprite>($"Icon/{Icon}");
 

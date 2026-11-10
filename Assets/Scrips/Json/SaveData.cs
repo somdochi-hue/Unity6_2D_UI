@@ -5,11 +5,35 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
+using NUnit.Framework.Constraints;
+
+
 
 public abstract class SaveData
 {
     public int Version { get; protected set; }
     public abstract SaveData VersionUP();
+}
+
+public class SaveDataV5 : SaveData
+{
+    public string PlayerName {get; set;} = string.Empty;
+    public string filstname {get; set;} = string.Empty;
+    public string lastname {get; set;} = string.Empty;
+    public int Gold {get; set;} = 100;
+
+    public List<SaveItemData> ItemList = new List<SaveItemData>();
+
+    public SaveDataV5()
+    {
+        Version = 5;
+    }
+
+    public override SaveData VersionUP()
+    {
+        throw new System.NotImplementedException();
+    }
 }
 
 public class SaveDataV4 : SaveData
@@ -21,7 +45,7 @@ public class SaveDataV4 : SaveData
 
     public SaveDataV4()
     {
-        Version = 3;
+        Version = 4;
     }
 
     public void nameSplit(string playerName)

@@ -5,8 +5,8 @@ public class StringTable : DataTable
 {
     public class Data
     {
-        public string ID {get; set;}
-        public string STRING {get; set;}
+        public string Id {get; set;}
+        public string String {get; set;}
     }
 
     private readonly Dictionary<string, string> dictionary = new Dictionary<string, string>();
@@ -22,25 +22,25 @@ public class StringTable : DataTable
 
         foreach (var item in list)
         {
-            if (!dictionary.ContainsKey(item.ID))
+            if (!dictionary.ContainsKey(item.Id))
             {
-                dictionary.Add(item.ID, item.STRING);
+                dictionary.Add(item.Id, item.String);
             }
             else
             {
-                Debug.LogError($"키 중복: {item.ID}");
+                Debug.LogError($"키 중복: {item.Id}");
             }
         }
 
         foreach (var character in list)
         {
-            if (!dictionary.ContainsKey(character.ID))
+            if (!dictionary.ContainsKey(character.Id))
             {
-                dictionary.Add(character.ID, character.STRING);
+                dictionary.Add(character.Id, character.String);
             }
             else
             {
-                Debug.LogError($"키 중복: {character.ID}");
+                Debug.LogError($"키 중복: {character.Id}");
             }
         }
     }

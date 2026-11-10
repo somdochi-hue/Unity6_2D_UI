@@ -21,7 +21,7 @@ public static class DataTableIds
 public static class Variables
 {
     public static event System.Action OnLanguageChanged;
-    private static Languages language = Languages.Japanese;
+    private static Languages language = Languages.Korean;
 
     public static Languages Language
     {
